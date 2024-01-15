@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="calculator" class="container d-flex flex-column p-1">
+            <div class="input-container d-flex justify-content-center">
+                <input type="button" value="CE" class="special-operator ce-button" id="ce-button" onclick="clearBox()">
+                <input type="text" name="text-box" id="text-box">
+            </div>
+            <div class="buttons-container container">
+                    <div class="row">
+                        <input type="button" value="7" class="number col">
+                        <input type="button" value="8" class="number col">
+                        <input type="button" value="9" class="number col">
+                        <input type="button" value="+" class="operator col">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="4" class="number col">
+                        <input type="button" value="5" class="number col">
+                        <input type="button" value="6" class="number col">
+                        <input type="button" value="-" class="operator col">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="1" class="number col">
+                        <input type="button" value="2" class="number col">
+                        <input type="button" value="3" class="number col">
+                        <input type="button" value="*" class=" operator col">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="0" class="number col">
+                        <input type="button" value="." class="special-operator col" id="point">
+                        <input type="button" value="=" class="special-operator col" id="equals" onclick="calculate()">
+                        <input type="button" value="/" class="operator col">
+                    </div>    
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

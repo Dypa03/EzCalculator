@@ -1,0 +1,55 @@
+:root {
+    --color-text-buttons: white;
+    --color-background-input: #3b2b66;
+    
+    --color-numbers:  rgb(79, 13, 13);
+    --color-operators: rgb(119, 81, 10);
+    --color-background-ce: rgb(187, 122, 0);
+}
+
+#calculator {
+    width: 400px;
+    height: 600px;
+}
+
+.number {
+    background-color: var(--color-numbers);
+}
+
+.operator {
+    background-color: var(--color-operators);
+}
+
+.input-container {
+    background-color: var(--color-background-input);
+    padding: 10px;
+    border: 0.1px solid var(--color-text-buttons);
+}
+
+.ce-button {
+    width: 80px;
+    margin-right: 10px;
+    background-color: var(--color-background-ce);
+}
+
+.special-operator {
+    background-color: var(--color-background-ce);
+}
+
+#text-box {
+    border: none;
+    padding: 8px;
+    margin-left: 10px;
+    flex-grow: 0.8;
+    color: black;
+}
+
+.row input, .input-container input {
+    border: 0.1px solid var(--color-text-buttons);
+    color: var(--color-text-buttons);
+    height: 40px;
+}
+
+.number:hover, .operator:hover {
+    filter: brightness(1.4);
+}
